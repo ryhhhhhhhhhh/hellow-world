@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    table {  
+    width: 50%; /* 宽度为100% */  
+    align-self:center;
+    text-align: center;
+    border-collapse: collapse; /* 边框合并 */  
+    border: 1px solid black; /* 边框宽度为1像素，样式为实线，颜色为黑色 */  
+    }  
+  
+    table td, table th {  
+    height: 30px;
+    border: 1px solid black; /* 单元格和表头的边框宽度为1像素，样式为实线，颜色为黑色 */  
+    }
+
+    table thead th{
+        height:30px;
+        border: 1px solid black; /* 单元格和表头的边框宽度为1像素，样式为实线，颜色为黑色 */  
+        
+    }
+    .thcolor1{
+        background-color: #007AAE;
+
+    }
+    .thcolor2{
+        background-color: #EAA1B5;
+    }
+    .color1 {
+        background-color: #AAE6FF;
+    }
+
+    .color2 {
+        background-color: #FBDCEB;
+    }
+
+
+    </style>
+</head>
+<body>
+        <h2>表格样式</h2>
+    <div>
+        <table>
+            <thead>
+                <tr class="thcolor1">
+                    <th>公司</th>
+                    <th>联系人</th>
+                    <th>地区</th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td>阿里巴巴</td>
+                    <td>马云</td>
+                    <td>杭州</td>
+                </tr>
+                <tr class="color1">
+                    <td>腾讯</td>
+                    <td>马化腾</td>
+                    <td>深圳</td>
+    
+                </tr>
+                <tr>
+                    <td>华为</td>
+                    <td>任正非</td>
+                    <td>深圳</td>
+                </tr>
+                <tr class="color1">
+                    <td>网易</td>
+                    <td>丁磊</td>
+                    <td>广州</td>
+                </tr>
+                <!-- 更多行 -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>小米</td>
+                    <td>雷军</td>
+                    <td>北京</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+
+
+        <table>
+            <thead>
+                <tr class="thcolor2">
+                    <th>公司</th>
+                    <th>联系人</th>
+                    <th>地区</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>阿里巴巴</td>
+                    <td>马云</td>
+                    <td>杭州</td>
+                </tr>
+                <tr class="color2">
+                    <td>腾讯</td>
+                    <td>马化腾</td>
+                    <td>深圳</td>
+        
+                </tr>
+                <tr>
+                    <td>华为</td>
+                    <td>任正非</td>
+                    <td>深圳</td>
+                </tr>
+                <tr class="color2">
+                    <td>网易</td>
+                    <td>丁磊</td>
+                    <td>广州</td>
+                </tr>
+                <!-- 更多行 -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>小米</td>
+                    <td>雷军</td>
+                    <td>北京</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script>
+        //1、获取元素
+        var div=document.querySelector('div');
+        //2、注册事件处理程序
+        div.onclick=function(){
+        }
+    </script>
+</body>
+</html>
